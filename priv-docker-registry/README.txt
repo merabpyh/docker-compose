@@ -6,7 +6,7 @@
 
 Запускать командой "docker-compose up -d", останавливать "docker-compose down",
 из директории с docker-compose файлом.
-Использовать командой "docker pull your.dns.name:443/yourimage"
+Использовать командой "docker pull your.dns.name:443/registry"
 
 Информация взята из ститьи с хабра:
 https://habrahabr.ru/post/320884/
