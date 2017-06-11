@@ -14,7 +14,6 @@ USR=$1
 USRPASS=$2
 
 #DIMG=registry
-WDIR=$(pwd)
 
 # dir's from compose file
 mkdir data auth && touch auth/htpasswd
@@ -23,7 +22,7 @@ mkdir data auth && touch auth/htpasswd
 docker pull $DIMG && docker tag $DIMG:latest $DIMG:static
 
 # set user and pass for registry
-docker run --entrypoint htpasswd $DIMG:static -Bbn $USR $USRPASS > $WDIR/auth/htpasswd && docker rm $DIMG:static
+docker run --entrypoint htpasswd $DIMG:static -Bbn $USR $USRPASS > ./auth/htpasswd && docker rm $DIMG:static
 
 # start
 docker-compose up -d
