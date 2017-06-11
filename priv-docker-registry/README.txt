@@ -6,3 +6,6 @@
 
 Запускать командой "docker-compose up -d", останавливать "docker-compose down",
 из директории с docker-compose файлом.
+
+Информация взята из ститьи с хабра:
+https://habrahabr.ru/post/320884/
