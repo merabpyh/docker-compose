@@ -25,5 +25,5 @@ docker pull $DIMG && docker tag $DIMG:latest $DIMG:static
 docker run --rm --entrypoint htpasswd $DIMG:static -Bbn $USR $USRPASS > ./auth/htpasswd
 
 # start
-docker-compose up -d
+#docker-compose up -d
 
