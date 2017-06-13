@@ -8,5 +8,6 @@
 из директории с docker-compose файлом.
 Использовать командой "docker pull your.dns.name:443/registry"
 
-Информация взята из ститьи с хабра:
+Информация взята из:
 https://habrahabr.ru/post/320884/
+https://docs.docker.com/registry/deploying/
